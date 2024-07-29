@@ -8,5 +8,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root "tailwind#index"
+  root "tailwind#view"
+  get "/before" , to:"tailwind#index"
 end
